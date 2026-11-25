@@ -1,14 +1,15 @@
 {
- "web": 9,
- "apk": 109,
- "apkName": "4.9",
+ "web": 10,
+ "apk": 110,
+ "apkName": "4.10",
  "minApk": 0,
  "files": [
+  "config.js",
   "index.html",
   "webversion.txt"
  ],
  "apks": {
-  "fr.flip7.app": "https://lito40000.github.io/jeux-maj/flip7/apk/Flip7.apk?v=9"
+  "fr.flip7.app": "https://lito40000.github.io/jeux-maj/flip7/apk/Flip7.apk?v=10"
  },
- "notes": "Nouveautés : Mise à jour à distance pour tous les joueurs (jeu + appli)"
+ "notes": "Nouveautés : Version 5 : fond gai, musique zen, nouveaux sons, avatars, extension Vengeance, jeu en ligne"
 }

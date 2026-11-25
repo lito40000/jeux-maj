@@ -256,13 +256,56 @@ td .av{width:30px;height:30px}
 .prow>.av{width:40px;height:40px}
 .bigb:disabled{opacity:.4}
 
+/* ---------- écran de préparation (clair) ---------- */
+.card2{background:rgba(255,255,255,.95);color:#15314f;border-radius:20px;padding:14px;margin:12px 0;box-shadow:0 8px 22px rgba(0,40,90,.18)}
+.c2t{font:800 15px Nunito,sans-serif;color:#15314f;margin-bottom:10px}
+.c2h{margin:8px 0 0;font-size:13px;color:#5b7088}
+.merow{display:flex;gap:12px;align-items:center}
+.avb.big .av{width:64px;height:64px;box-shadow:0 0 0 3px #ffc400}
+.inp2{flex:1;font:800 18px Nunito,sans-serif;padding:12px 14px;border-radius:14px;border:2px solid #dbe7f3;background:#f4f8fc;color:#15314f;min-height:52px;user-select:text;-webkit-user-select:text}
+.inp2:focus{outline:none;border-color:#ffc400}
+.stepper{display:flex;align-items:center;justify-content:center;gap:22px}
+.stepper button{width:54px;height:54px;border-radius:50%;border:0;background:#1b8fe0;color:#fff;font:900 30px/1 Nunito,sans-serif;cursor:pointer;box-shadow:0 4px 0 #0f5fa0}
+.stepper button:active{transform:translateY(2px);box-shadow:0 2px 0 #0f5fa0}.stepper button:disabled{opacity:.3}
+.stepper b{font:44px/1 'Lilita One',sans-serif;color:#15314f;min-width:40px;text-align:center}
+.oppav{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:12px}
+.oppav div{display:flex;flex-direction:column;align-items:center;gap:3px;font-size:12px;font-weight:800;color:#5b7088}.oppav .av{width:46px;height:46px}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px}.tiles.t3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.tile{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:2px;text-align:left;padding:12px;border-radius:16px;border:2px solid #dbe7f3;background:#f4f8fc;color:#15314f;cursor:pointer;min-height:64px;font-family:Nunito,sans-serif;transition:transform .1s,border-color .15s,background .15s}
+.tile b{font-size:16px;font-weight:900}.tile small{font-size:12.5px;color:#5b7088;font-weight:700;line-height:1.25}
+.tile.on{border-color:#ffc400;background:#fff8d9;box-shadow:0 0 0 3px rgba(255,196,0,.28)}
+.tile.on::after{content:"✓";position:absolute;top:-9px;right:-7px;box-shadow:0 2px 0 rgba(0,0,0,.15);width:22px;height:22px;border-radius:50%;background:#ffc400;color:#15314f;font:900 14px/22px Nunito,sans-serif;text-align:center}
+.tile:active{transform:scale(.97)}
+.tmini{display:flex;--cw:30px;margin-bottom:6px}.tmini .card+.card{margin-left:-10px}.tmini .card .ix,.tmini .card .lbl,.tmini .card .sh,.tmini .card .clover{display:none}
+.frow{display:flex;gap:10px;align-items:center;margin:8px 0}.frow .av{width:44px;height:44px}
+.frow .x{width:40px;height:40px;border-radius:12px;border:0;background:#eef3f8;color:#5b7088;font:900 20px Nunito,sans-serif;cursor:pointer;flex:none}
+.addb{width:100%;min-height:48px;border-radius:14px;border:2px dashed #b9cde2;background:none;color:#1b8fe0;font:900 16px Nunito,sans-serif;cursor:pointer;margin-top:4px}
+#setup .top h2{color:#fff;-webkit-text-stroke:0;text-shadow:0 2px 0 rgba(0,40,90,.35)}
+
+/* ---------- logo FLIP 7 (lettres colorées + carte holographique) ---------- */
+.logo2{margin:0;line-height:1;display:flex;justify-content:center;filter:drop-shadow(0 .07em 0 #1b1240) drop-shadow(0 .12em .18em rgba(0,30,80,.35))}
+.logo2 .lg{display:inline-flex;align-items:center;gap:.02em}
+.logo2 .lt{display:inline-block;font-family:'Lilita One',sans-serif;background:linear-gradient(180deg,var(--a) 15%,var(--b) 85%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-stroke:.045em #1b1240;rotate:var(--r);padding:0 .02em}
+.logo2 .l7{display:inline-grid;place-items:center;margin-left:.1em;width:.66em;height:.88em;border-radius:.1em;rotate:9deg;position:relative;overflow:hidden;
+ background:linear-gradient(135deg,#fffdf2,#f7ecd0);box-shadow:0 0 0 .04em #1b1240,0 0 0 .085em #fff,0 0 0 .12em #1b1240}
+.logo2 .l7::before{content:"";position:absolute;inset:-40%;background:conic-gradient(from 0deg,#2fe0ff,#a17bff,#ff4fb8,#ffd21f,#5dffb0,#2fe0ff);opacity:.35;animation:spin 7s linear infinite}
+.logo2 .l7::after{content:"";position:absolute;inset:.05em;border:.012em solid #1b1240;border-radius:.07em;background:radial-gradient(130% 90% at 30% 15%,#fffef9,#f6efdf)}
+.logo2 .l7 b{position:relative;z-index:1;font:inherit;font-family:'Lilita One',sans-serif;font-size:.9em;background:linear-gradient(180deg,#ff6b6b 10%,#e0245e 90%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-stroke:.04em #1b1240;translate:0 .03em}
+.logo2.home{font-size:clamp(70px,23vw,118px);margin:0 auto .14em}
+.logo2.home .lt{animation:hop 3.2s ease-in-out infinite}.logo2.home .lt:nth-child(2){animation-delay:.15s}.logo2.home .lt:nth-child(3){animation-delay:.3s}.logo2.home .lt:nth-child(4){animation-delay:.45s}
+.logo2.home .l7{animation:hop7 3.2s ease-in-out .6s infinite}
+@keyframes hop{0%,70%,100%{transform:none}80%{transform:translateY(-.1em)}}
+@keyframes hop7{0%,70%,100%{transform:none}82%{transform:translateY(-.12em) rotate(8deg) scale(1.06)}}
+.logo2.mini{font-size:30px;filter:drop-shadow(0 2px 0 #1b1240)}
+@media(prefers-reduced-motion:reduce){.logo2 .lt,.logo2 .l7,.logo2 .l7::before{animation:none}}
+
 </style>
 </head>
 <body data-s="home">
 <section id="home" class="scr">
  <div>
   <div class="fan" id="fan"></div>
-  <h1 class="logo">FLIP <span>7</span></h1>
+  <h1 class="logo2 home" aria-label="Flip 7"><span class="lg"><span class="lt" style="--a:#fff36b;--b:#ffb000;--r:-6deg">F</span><span class="lt" style="--a:#ff8fd0;--b:#ff2d8f;--r:4deg">L</span><span class="lt" style="--a:#7ff0ff;--b:#13a9f0;--r:-3deg">I</span><span class="lt" style="--a:#9dffb5;--b:#16c56a;--r:5deg">P</span><span class="l7"><b>7</b></span></span></h1>
   <p class="tagl">Stop ou encore ? Aligne 7 numéros différents… sans jamais tirer de doublon.</p>
  </div>
  <div class="menu">
@@ -275,18 +318,47 @@ td .av{width:30px;height:30px}
  <p class="foot">Projet de fan – illustrations originales</p>
 </section>
 
-<section id="setup" class="scr"><div class="sbox">
+<section id="setup" class="scr light"><div class="sbox">
  <div class="top"><button class="icob" id="sBack" aria-label="Retour">‹</button><h2 id="sTitle">Nouvelle partie</h2></div>
- <p class="hint">Touche un avatar pour le changer. De 3 à 6 joueurs.</p>
- <div id="sRows"></div>
- <div class="minis"><button class="mini" id="sAdd">+ Joueur</button><button class="mini" id="sDel">− Joueur</button></div>
- <div class="lab">Jeu de cartes</div>
- <div class="seg" id="sMode"><button data-v="classic" class="on">Classique</button><button data-v="veng">Vengeance (extension)</button></div>
- <div class="lab">Niveau des robots</div>
- <div class="seg" id="sLvl"><button data-v="0">Facile</button><button data-v="1" class="on">Normal</button><button data-v="2">Expert</button></div>
- <div class="lab">Points à atteindre</div>
- <div class="seg" id="sGoal"><button data-v="100">100</button><button data-v="200" class="on">200</button><button data-v="300">300</button></div>
- <button class="bigb y" id="sGo" style="width:100%;margin-top:22px">C'est parti !</button>
+ <div class="card2">
+  <div class="c2t" id="sMeT">Toi</div>
+  <div class="merow"><button class="avb big" id="sMeAv" aria-label="Changer de personnage"></button><input class="inp2" id="sMeName" maxlength="12" aria-label="Ton prénom" placeholder="Ton prénom"></div>
+  <p class="c2h">Touche ton portrait pour changer de personnage.</p>
+ </div>
+ <div class="card2" id="sOppBox">
+  <div class="c2t">Combien d'adversaires ?</div>
+  <div class="stepper"><button id="sMinus" aria-label="Moins">−</button><b id="sCount">3</b><button id="sPlus" aria-label="Plus">+</button></div>
+  <div class="oppav" id="sOpp"></div>
+ </div>
+ <div class="card2" id="sFrBox">
+  <div class="c2t">Les autres joueurs</div>
+  <div id="sFr"></div>
+  <button class="addb" id="sAddF">+ Ajouter un joueur</button>
+ </div>
+ <div class="card2">
+  <div class="c2t">Version du jeu</div>
+  <div class="tiles" id="sMode">
+   <button class="tile" data-v="classic"><span class="tmini" id="tmC"></span><b>Classique</b><small>Le jeu de base, idéal pour commencer</small></button>
+   <button class="tile" data-v="veng"><span class="tmini" id="tmV"></span><b>Vengeance</b><small>Extension : vols, malus, coups bas</small></button>
+  </div>
+ </div>
+ <div class="card2" id="sLvlBox">
+  <div class="c2t">Niveau des robots</div>
+  <div class="tiles t3" id="sLvl">
+   <button class="tile" data-v="0"><b>Facile</b><small>Pour découvrir</small></button>
+   <button class="tile" data-v="1"><b>Normal</b><small>Équilibré</small></button>
+   <button class="tile" data-v="2"><b>Expert</b><small>Ils calculent tout</small></button>
+  </div>
+ </div>
+ <div class="card2">
+  <div class="c2t">Durée de la partie</div>
+  <div class="tiles t3" id="sGoal">
+   <button class="tile" data-v="100"><b>Courte</b><small>100 points</small></button>
+   <button class="tile" data-v="200"><b>Normale</b><small>200 points</small></button>
+   <button class="tile" data-v="300"><b>Longue</b><small>300 points</small></button>
+  </div>
+ </div>
+ <button class="bigb y" id="sGo" style="width:100%;margin:8px 0 20px">C'est parti !</button>
 </div></section>
 
 <section id="online" class="scr"><div class="sbox">
@@ -320,7 +392,7 @@ td .av{width:30px;height:30px}
 </div></section>
 
 <section id="game" class="scr">
- <header><div class="logo">FLIP 7</div><span class="pill" id="iRound">Manche 1</span><span class="pill" id="iGoal">→ 200</span><span class="sp"></span><button class="icob" id="gMenu" aria-label="Menu">≡</button></header>
+ <header><div class="logo2 mini" aria-label="Flip 7"><span class="lg"><span class="lt" style="--a:#fff36b;--b:#ffb000;--r:-6deg">F</span><span class="lt" style="--a:#ff8fd0;--b:#ff2d8f;--r:4deg">L</span><span class="lt" style="--a:#7ff0ff;--b:#13a9f0;--r:-3deg">I</span><span class="lt" style="--a:#9dffb5;--b:#16c56a;--r:5deg">P</span><span class="l7"><b>7</b></span></span></div><span class="pill" id="iRound">Manche 1</span><span class="pill" id="iGoal">→ 200</span><span class="sp"></span><button class="icob" id="gMenu" aria-label="Menu">≡</button></header>
  <div id="main">
   <div id="seats"></div>
   <div class="rim holo"><div id="table"><div class="pile" id="deckPile"></div><div id="turn"></div><div class="pile" id="discPile"></div></div></div>
@@ -360,51 +432,60 @@ const LVL=['facile','normal','expert'];
 const BOTS=['Léa','Max','Zoé','Hugo','Inès','Tom','Jade','Noé','Lina','Sacha'];
 let G=null;
 
-/* ---------- avatars (personnages originaux) ---------- */
-const AV_BG=[['#ffd43b','#ff922b'],['#63e6be','#12b886'],['#74c0fc','#4263eb'],['#ffa8a8','#f03e3e'],['#d0bfff','#7950f2'],['#ffc078','#e8590c'],['#96f2d7','#0ca678'],['#fcc2d7','#e64980'],['#a5d8ff','#1c7ed6'],['#c0eb75','#66a80f'],['#ffe066','#f59f00'],['#99e9f2','#1098ad']];
-const AV_SKIN=['#ffe0c7','#f7c9a0','#e0a36f','#b9773f','#8a5530'];
-const AV_HAIR=['#2b1a10','#6b3e1e','#f2c14e','#d9480f','#1b1240','#e8e8e8','#ff8fab','#5c7cfa'];
-const AV_SHIRT=['#4dabf7','#ff6b6b','#51cf66','#fcc419','#9775fa','#ff922b','#20c997','#f06595'];
-// [peau, coiffure, cheveux, yeux, bouche, accessoire, tenue]
-const AV_SET=[[0,0,0,0,0,0,0],[1,1,3,1,1,2,1],[2,2,0,2,0,3,2],[0,3,2,0,2,1,3],[3,4,0,1,1,0,4],[1,5,1,2,3,4,5],[4,6,4,0,0,5,6],[0,7,6,2,1,0,7],
- [2,1,5,0,3,1,0],[1,3,3,1,0,3,4],[3,0,7,2,1,4,1],[0,2,1,1,2,2,6],[4,5,0,2,0,1,3],[1,4,2,0,1,5,5],[2,6,3,1,3,0,2],[0,1,4,2,2,4,7]];
+/* ---------- avatars : portraits illustrés réalistes (personnages inventés) ---------- */
+const SKINS=[['#f9dcc4','#e8b896'],['#f1c7a1','#d9a074'],['#e0aa7e','#c07f50'],['#c68a5c','#9c6339'],['#9a6440','#74462a'],['#6e4429','#4f2e1a']];
+const HAIRS=[['#2a1b12','#4a3222'],['#4b2e1d','#7a4f33'],['#7b4a2a','#a8703f'],['#b5652d','#df8f4e'],['#d8b468','#f3d892'],['#8f8f96','#c9c9cf'],['#14110f','#3a332d'],['#9e3d22','#d0683e']];
+const IRIS=['#6b4423','#3d7ab8','#4e8a4a','#8a6a3a','#2f2a26'];
+const SHIRTS=[['#3b82c4','#2563a6'],['#e2574c','#b83a31'],['#3fa66b','#2c7f50'],['#f2b33d','#d18f1c'],['#7a5cc7','#5b3fa3'],['#ef7aa0','#d0507c'],['#2f3b52','#1d2638'],['#18a3a3','#0f7c7c']];
+const BGS=[['#bfe7ff','#7cc4f2'],['#ffe1b3','#ffc37a'],['#c9f2d9','#88d9a8'],['#ffd0dc','#ff9fb8'],['#e2d6ff','#b9a3f5'],['#fff1a8','#ffd84d']];
+// [peau, cheveux(couleur), coiffure, yeux, tenue, fond, barbe, lunettes, boucles d'oreilles, sourire]
+const PEOPLE=[[0,1,2,1,5,3,0,0,1,1],[2,0,0,0,0,0,0,0,0,0],[1,4,3,1,3,5,0,0,1,1],[4,6,5,0,2,2,1,0,0,0],[3,0,4,0,4,4,0,0,1,1],[0,3,1,2,6,0,0,1,0,0],[5,6,7,0,1,1,0,0,1,1],[1,2,6,3,7,2,2,0,0,0],
+ [2,7,2,2,4,1,0,1,1,0],[0,5,1,1,0,5,1,1,0,1],[4,0,3,0,5,3,0,0,1,0],[1,1,0,2,2,4,0,0,0,1],[3,6,4,0,3,0,0,1,1,0],[0,4,0,1,1,2,2,0,0,1],[5,0,6,0,6,5,0,0,1,1],[2,3,5,2,7,4,0,0,0,0]];
 let avN=0;
-function avatar(i){
- const n=AV_SET.length;i=((i%n)+n)%n;const [sk,hs,hc,ey,mo,acc,sh]=AV_SET[i],k='a'+(++avN),bg=AV_BG[i%AV_BG.length],S=AV_SKIN[sk],H=AV_HAIR[hc],T=AV_SHIRT[sh];
- const back=[
-  '', '', `<path d="M14 30c0-14 8-21 18-21s18 7 18 21v22H14z" fill="${H}"/>`, `<circle cx="32" cy="10" r="7" fill="${H}"/>`,
-  `<g fill="${H}"><circle cx="18" cy="24" r="9"/><circle cx="46" cy="24" r="9"/><circle cx="24" cy="15" r="9"/><circle cx="40" cy="15" r="9"/><circle cx="32" cy="12" r="9"/><circle cx="15" cy="34" r="7"/><circle cx="49" cy="34" r="7"/></g>`,
-  '', `<g fill="${H}"><circle cx="11" cy="36" r="6"/><circle cx="53" cy="36" r="6"/></g>`, ''][hs];
- const front=[
-  `<path d="M15 32c0-12 7-19 17-19s17 7 17 19c-4-6-10-9-17-9s-13 3-17 9z" fill="${H}"/>`,
-  `<path d="M15 31l2-11 5 4 3-9 5 6 4-8 3 8 5-5 2 8 5-2-2 10c-5-5-10-7-17-7s-12 2-15 6z" fill="${H}"/>`,
-  `<path d="M15 33c0-13 7-20 17-20s17 7 17 20c-3-7-8-11-17-11-6 0-10 2-12 5z" fill="${H}"/>`,
-  `<path d="M15 31c0-11 7-17 17-17s17 6 17 17c-5-5-11-7-17-7s-12 2-17 7z" fill="${H}"/>`,
-  `<path d="M17 28c3-8 8-11 15-11s12 3 15 11c-5-3-10-4-15-4s-10 1-15 4z" fill="${H}"/>`,
-  `<path d="M15 32c0-12 8-19 18-19 9 0 16 6 16 16-8-1-18-4-24-11-2 6-6 10-10 14z" fill="${H}"/>`,
-  `<path d="M15 31c0-11 7-17 17-17s17 6 17 17c-4-4-8-6-12-6l-5-4-5 4c-4 0-8 2-12 6z" fill="${H}"/>`,
-  `<path d="M13 28c1-10 9-16 19-16s18 6 19 16z" fill="${T}"/><path d="M11 28h42v4H11z" fill="${T}" opacity=".85"/><circle cx="32" cy="12" r="2.5" fill="#fff"/>`][hs];
- const eyes=[
-  `<g fill="#1b1240"><ellipse cx="25.5" cy="34" rx="2.6" ry="3.2"/><ellipse cx="38.5" cy="34" rx="2.6" ry="3.2"/></g><g fill="#fff"><circle cx="26.4" cy="32.8" r="1"/><circle cx="39.4" cy="32.8" r="1"/></g>`,
-  `<g fill="none" stroke="#1b1240" stroke-width="2.2" stroke-linecap="round"><path d="M22.5 34.5q3-3.5 6 0"/><path d="M35.5 34.5q3-3.5 6 0"/></g>`,
-  `<g fill="#1b1240"><circle cx="25.5" cy="34" r="3.6"/><circle cx="38.5" cy="34" r="3.6"/></g><g fill="#fff"><circle cx="26.8" cy="32.6" r="1.4"/><circle cx="39.8" cy="32.6" r="1.4"/><circle cx="24.6" cy="35.4" r=".6"/><circle cx="37.6" cy="35.4" r=".6"/></g>`][ey];
- const mouth=[
-  `<path d="M27 41q5 5 10 0" fill="none" stroke="#1b1240" stroke-width="2" stroke-linecap="round"/>`,
-  `<path d="M26.5 40h11q-.5 6-5.5 6t-5.5-6z" fill="#7a1f3d"/><path d="M29 44q3-2 6 0q-1 2-3 2t-3-2z" fill="#ff8fa3"/>`,
-  `<path d="M28 41q2 2 4 0q2 2 4 0" fill="none" stroke="#1b1240" stroke-width="1.8" stroke-linecap="round"/>`,
-  `<path d="M26 40.5q6 3.5 12 0q-1 4.5-6 4.5t-6-4.5z" fill="#fff" stroke="#1b1240" stroke-width="1.4" stroke-linejoin="round"/>`][mo];
- const ac=[
-  '',
-  `<g fill="rgba(255,255,255,.25)" stroke="#1b1240" stroke-width="1.6"><circle cx="25.5" cy="34" r="5.2"/><circle cx="38.5" cy="34" r="5.2"/></g><path d="M30.7 34h2.6" stroke="#1b1240" stroke-width="1.6"/>`,
-  `<path d="M24 14l8 5 8-5-2 9-6-3-6 3z" fill="#ff6b9d" stroke="#1b1240" stroke-width="1.2" stroke-linejoin="round" transform="translate(10 -2) rotate(15 32 16)"/>`,
-  `<path d="M13 34a19 19 0 0 1 38 0" fill="none" stroke="#343a40" stroke-width="3"/><rect x="9" y="31" width="7" height="11" rx="3" fill="#ff6b6b" stroke="#1b1240" stroke-width="1.2"/><rect x="48" y="31" width="7" height="11" rx="3" fill="#ff6b6b" stroke="#1b1240" stroke-width="1.2"/>`,
-  `<g fill="#c0763a" opacity=".7"><circle cx="21" cy="38" r=".9"/><circle cx="23.5" cy="39.5" r=".9"/><circle cx="20.5" cy="40.5" r=".8"/><circle cx="43" cy="38" r=".9"/><circle cx="40.5" cy="39.5" r=".9"/><circle cx="43.5" cy="40.5" r=".8"/></g>`,
-  `<g transform="translate(44 17)"><g fill="#fff">${[0,72,144,216,288].map(a=>`<ellipse cx="0" cy="-4" rx="2.6" ry="3.6" transform="rotate(${a})"/>`).join('')}</g><circle r="2.2" fill="#fcc419"/></g>`][acc];
- return `<svg class="av" viewBox="0 0 64 64" aria-hidden="true"><defs><radialGradient id="${k}b" cx="35%" cy="30%" r="80%"><stop offset="0" stop-color="${bg[0]}"/><stop offset="1" stop-color="${bg[1]}"/></radialGradient><radialGradient id="${k}s" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient><clipPath id="${k}c"><circle cx="32" cy="32" r="32"/></clipPath></defs>
-  <circle cx="32" cy="32" r="32" fill="url(#${k}b)"/><g clip-path="url(#${k}c)">${back}<path d="M10 66c2-12 11-17 22-17s20 5 22 17z" fill="${T}"/><path d="M26 47h12v5q-6 4-12 0z" fill="${S}"/><path d="M10 66c2-12 11-17 22-17s20 5 22 17" fill="none" stroke="rgba(0,0,0,.12)" stroke-width="2"/>
-  <circle cx="14.5" cy="35" r="3.4" fill="${S}"/><circle cx="49.5" cy="35" r="3.4" fill="${S}"/><circle cx="32" cy="33" r="17" fill="${S}"/><circle cx="32" cy="33" r="17" fill="url(#${k}s)"/>
-  <ellipse cx="21.5" cy="39.5" rx="3.2" ry="2" fill="#ff8fa3" opacity=".55"/><ellipse cx="42.5" cy="39.5" rx="3.2" ry="2" fill="#ff8fa3" opacity=".55"/>${eyes}${mouth}${front}${ac}</g>
-  <circle cx="32" cy="32" r="31" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="2"/></svg>`}
+function avatar(i){const n=PEOPLE.length;i=((i%n)+n)%n;const [sk,hc,hs,ey,sh,bg,beard,gl,ear,smile]=PEOPLE[i],k='a'+(++avN);
+ const S=SKINS[sk],H=HAIRS[hc],I=IRIS[ey],T=SHIRTS[sh],B=BGS[bg],fem=[2,3,4,5,6].includes(hs)&&!beard;
+ const hairBack=['','',
+  `<path d="M29 46C27 25 39 14 50 14s23 11 21 32l2 38c-7 5-14 2-17-5H44c-3 7-10 10-17 5z" fill="url(#${k}h)"/>`,
+  `<path d="M29 46C28 26 39 15 50 15s22 11 21 31l1 19c-5 5-10 3-12-1H40c-2 4-7 6-12 1z" fill="url(#${k}h)"/>`,
+  `<g fill="url(#${k}h)"><circle cx="31" cy="34" r="9"/><circle cx="69" cy="34" r="9"/><circle cx="36" cy="22" r="10"/><circle cx="64" cy="22" r="10"/><circle cx="50" cy="17" r="11"/><circle cx="28" cy="48" r="8"/><circle cx="72" cy="48" r="8"/><circle cx="29" cy="60" r="7"/><circle cx="71" cy="60" r="7"/></g>`,
+  `<path d="M31 44C30 27 40 17 50 17s20 10 19 27z" fill="url(#${k}h)"/><circle cx="50" cy="12" r="8" fill="url(#${k}h)"/>`,
+  `<path d="M31 44C30 27 40 17 50 17s20 10 19 27z" fill="url(#${k}h)"/><path d="M66 30c12 4 14 22 6 36-2-10-5-18-10-24z" fill="url(#${k}h)"/>`,
+  ''][hs];
+ const hairFront=[
+  `<path d="M32 43c-1-16 8-25 19-25s19 9 17 25c-2-8-6-12-11-14-6 3-16 3-21 6-2 2-3 5-4 8z" fill="url(#${k}h)"/>`,
+  `<path d="M32 44c-2-17 7-27 19-27s20 10 17 28c-1-8-4-13-8-16-6 2-16-1-22 3-3 3-5 7-6 12z" fill="url(#${k}h)"/><path d="M56 22c-4 2-10 3-16 6" stroke="rgba(255,255,255,.25)" stroke-width="1.2" fill="none"/>`,
+  `<path d="M33 42c0-15 8-23 17-23s17 8 17 23c-3-7-8-12-15-13-5 4-12 7-19 13z" fill="url(#${k}h)"/>`,
+  `<path d="M33 41c0-14 8-22 17-22s17 8 17 22c-5-6-11-9-17-9s-12 3-17 9z" fill="url(#${k}h)"/>`,
+  `<g fill="url(#${k}h)"><circle cx="38" cy="27" r="5"/><circle cx="45" cy="23" r="5"/><circle cx="52" cy="22" r="5"/><circle cx="59" cy="24" r="5"/><circle cx="64" cy="29" r="5"/><circle cx="35" cy="33" r="4"/><circle cx="66" cy="35" r="4"/></g>`,
+  `<path d="M33 40c0-13 8-21 17-21s17 8 17 21c-5-5-11-8-17-8s-12 3-17 8z" fill="url(#${k}h)"/>`,
+  `<path d="M33 40c0-13 8-21 17-21s17 8 17 21c-4-6-10-9-17-9s-13 3-17 9z" fill="url(#${k}h)"/>`,
+  `<path d="M34 39c1-12 8-18 16-18s15 6 16 18c-4-5-10-8-16-8s-12 3-16 8z" fill="url(#${k}h)" opacity=".85"/>`][hs];
+ const eye=(cx,f)=>`<path d="M${cx-5.2} 46.2Q${cx} 41.8 ${cx+5.2} 46.2Q${cx} 49.4 ${cx-5.2} 46.2z" fill="#fbfbfb"/><circle cx="${cx}" cy="46" r="2.45" fill="${I}"/><circle cx="${cx}" cy="46" r="2.45" fill="none" stroke="rgba(0,0,0,.35)" stroke-width=".5"/><circle cx="${cx}" cy="46" r="1.15" fill="#120d0a"/><circle cx="${cx+.8}" cy="45.2" r=".65" fill="#fff"/>
+  <path d="M${cx-5.4} 46Q${cx} 41.3 ${cx+5.4} 46" fill="none" stroke="#2a1d16" stroke-width="${f?1.3:.9}" stroke-linecap="round"/>${f?`<path d="M${cx+(cx<50?-5.4:5.4)} 46l${cx<50?-1.4:1.4} -1.2" stroke="#2a1d16" stroke-width="1" stroke-linecap="round"/>`:''}`;
+ const brow=`<path d="M37 40.6Q42 37.8 47.2 39.6" stroke="${H[0]}" stroke-width="${fem?1.3:1.9}" fill="none" stroke-linecap="round"/><path d="M52.8 39.6Q58 37.8 63 40.6" stroke="${H[0]}" stroke-width="${fem?1.3:1.9}" fill="none" stroke-linecap="round"/>`;
+ const lip=fem?'#c4566a':'#b06a5c';
+ const mouth=smile?`<path d="M44 59.6Q50 61 56 59.6Q55 66 50 66t-6-6.4z" fill="#7a2b2b"/><path d="M45 60.2Q50 61.3 55 60.2l-.6 1.8Q50 62.8 45.6 62z" fill="#fff"/><path d="M44 59.6Q50 57.8 56 59.6" stroke="${lip}" stroke-width="1.3" fill="none" stroke-linecap="round"/>`
+  :`<path d="M44.5 60.4Q47.5 58.8 50 59.7Q52.5 58.8 55.5 60.4Q50 61.6 44.5 60.4z" fill="${lip}"/><path d="M44.5 60.4Q50 65 55.5 60.4Q50 62.4 44.5 60.4z" fill="${lip}" opacity=".8"/><path d="M45 60.6Q50 61.6 55 60.6" stroke="rgba(0,0,0,.35)" stroke-width=".5" fill="none"/>`;
+ const fh=beard===1?`<path d="M34 50c1 12 8 22 16 22s15-10 16-22c-2 8-6 14-10 16q-6-3-12 0c-4-2-8-8-10-16z" fill="url(#${k}h)" opacity=".95"/><path d="M45 58.4Q50 56.3 55 58.4Q50 59.9 45 58.4z" fill="${H[0]}"/>`:beard===2?`<path d="M45 58.4Q50 56.3 55 58.4Q50 59.9 45 58.4z" fill="${H[0]}"/><path d="M36 54c3 9 8 14 14 14s11-5 14-14c-3 6-8 10-14 10s-11-4-14-10z" fill="${H[0]}" opacity=".35"/>`:'';
+ return `<svg class="av" viewBox="0 0 100 100" aria-hidden="true"><defs>
+  <radialGradient id="${k}b" cx="35%" cy="25%" r="85%"><stop offset="0" stop-color="${B[0]}"/><stop offset="1" stop-color="${B[1]}"/></radialGradient>
+  <radialGradient id="${k}s" cx="42%" cy="38%" r="70%"><stop offset="0" stop-color="${S[0]}"/><stop offset=".75" stop-color="${S[0]}"/><stop offset="1" stop-color="${S[1]}"/></radialGradient>
+  <linearGradient id="${k}h" x1="0" y1="0" x2=".3" y2="1"><stop offset="0" stop-color="${H[1]}"/><stop offset="1" stop-color="${H[0]}"/></linearGradient>
+  <linearGradient id="${k}t" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${T[0]}"/><stop offset="1" stop-color="${T[1]}"/></linearGradient>
+  <clipPath id="${k}c"><circle cx="50" cy="50" r="50"/></clipPath></defs>
+  <circle cx="50" cy="50" r="50" fill="url(#${k}b)"/><g clip-path="url(#${k}c)"><g transform="matrix(1.24 0 0 1.24 -12 -6)">${hairBack}
+  <path d="M43 64v14q7 5 14 0V64z" fill="${S[1]}"/><path d="M43 70q7 6 14 0" fill="rgba(0,0,0,.12)"/>
+  <path d="M8 104c2-15 14-24 31-27q11 8 22 0c17 3 29 12 31 27z" fill="url(#${k}t)"/>${sh%2?'<path d="M43 77l7 10 7-10" fill="'+S[0]+'" stroke="rgba(0,0,0,.15)" stroke-width=".8"/>':'<path d="M40 77q10 8 20 0" fill="none" stroke="rgba(0,0,0,.18)" stroke-width="1.6"/>'}
+  <ellipse cx="33.2" cy="48" rx="3.6" ry="6" fill="${S[1]}"/><ellipse cx="66.8" cy="48" rx="3.6" ry="6" fill="${S[1]}"/><ellipse cx="33.6" cy="48" rx="1.6" ry="3.5" fill="rgba(0,0,0,.12)"/><ellipse cx="66.4" cy="48" rx="1.6" ry="3.5" fill="rgba(0,0,0,.12)"/>
+  ${ear?`<circle cx="33.4" cy="54.6" r="1.6" fill="#ffd43b" stroke="#c99700" stroke-width=".5"/><circle cx="66.6" cy="54.6" r="1.6" fill="#ffd43b" stroke="#c99700" stroke-width=".5"/>`:''}
+  <path d="M33 44c0-16 8-23 17-23s17 7 17 23c0 13-5 23-11 27q-6 3-12 0c-6-4-11-14-11-27z" fill="url(#${k}s)"/>
+  <path d="M56 71c6-4 11-14 11-27 0 10-3 19-8 24z" fill="rgba(0,0,0,.07)"/>
+  <ellipse cx="40" cy="54" rx="4" ry="2.4" fill="#ff7b8a" opacity="${fem?.22:.12}"/><ellipse cx="60" cy="54" rx="4" ry="2.4" fill="#ff7b8a" opacity="${fem?.22:.12}"/>
+  ${eye(42.5,fem)}${eye(57.5,fem)}${brow}
+  <path d="M50.3 47.5q-1 5.5-2.8 7.4 2.3 1.6 5 .2" fill="none" stroke="${S[1]}" stroke-width="1.1" stroke-linecap="round"/><path d="M48.5 55.4q1.6.7 3.2 0" stroke="rgba(0,0,0,.25)" stroke-width=".7" fill="none"/>
+  ${mouth}${fh}${hairFront}
+  ${gl?`<g fill="rgba(255,255,255,.18)" stroke="#2b2b33" stroke-width="1.2"><rect x="36" y="41.5" width="13" height="9.5" rx="3.5"/><rect x="51" y="41.5" width="13" height="9.5" rx="3.5"/></g><path d="M49 45.2q1-1 2 0M36 44.5l-3-1M64 44.5l3-1" stroke="#2b2b33" stroke-width="1.2" fill="none"/>`:''}</g></g>
+  <circle cx="50" cy="50" r="48.8" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="2.4"/></svg>`}
 
 /* ---------- cartes ---------- */
 const NCOL=['#8a94a8','#b8763e','#e6b800','#ff4fa0','#29a3ff','#2bbf6a','#9b5cf6','#ff3b3b','#14b8a6','#ff8a1f','#e0245e','#3b5bff','#c2410c','#c2255c'];
@@ -893,21 +974,34 @@ function goHome(){if(G&&G.online&&!G.dead)Net.update(G.code,{status:'f7end'}).ca
 function labels(){const s='Son : '+(muted?'non':'oui'),m='Musique : '+(musicOn?'oui':'non');$('hSound').textContent=$('mSound').textContent=s;$('hMusic').textContent=$('mMusic').textContent=m}
 const myName=()=>LS.get('f7_name')||'Toi',myAv=()=>+(LS.get('f7_av')||0);
 
-/* --- partie locale --- */
-let setup=[],sLevel=1,sGoal=200,sMode=LS.get('f7_mode')||'classic';
-function openSetup(friends){const me=myName(),av=myAv();
- setup=friends?[{name:me,bot:false,av},{name:'Joueur 2',bot:false,av:av+3},{name:'Joueur 3',bot:false,av:av+6}]:[{name:me,bot:false,av},...shuffle(BOTS.slice()).slice(0,3).map((n,i)=>({name:n,bot:true,av:av+1+i*4}))];
- $('sTitle').textContent=friends?'Entre amis':'Contre l\'ordi';renderSetup();segSet('sMode',sMode);go('setup')}
-function renderSetup(){$('sRows').innerHTML=setup.map((s,i)=>`<div class="prow"><button class="avb" data-a="${i}" aria-label="Changer d'avatar">${avatar(s.av)}</button><input data-i="${i}" value="${esc(s.name)}" maxlength="12" aria-label="Nom du joueur ${i+1}"><div class="seg"><button data-h="${i}" class="${s.bot?'':'on'}">Humain</button><button data-b="${i}" class="${s.bot?'on':''}">Robot</button></div></div>`).join('')}
-$('sRows').addEventListener('input',e=>{const i=e.target.dataset.i;if(i!=null)setup[+i].name=e.target.value});
-$('sRows').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;sfx('click');const d=b.dataset;
- if(d.a!=null)setup[+d.a].av++;if(d.h!=null)setup[+d.h].bot=false;if(d.b!=null)setup[+d.b].bot=true;renderSetup()});
-$('sAdd').onclick=()=>{if(setup.length<6){sfx('click');setup.push({name:BOTS.find(n=>!setup.some(s=>s.name===n))||'Robot',bot:true,av:setup.length*3+2});renderSetup()}};
-$('sDel').onclick=()=>{if(setup.length>3){sfx('click');setup.pop();renderSetup()}};
+/* --- partie locale : écran de préparation simple --- */
+let SU={friends:false,count:3,opp:[],fr:[],level:+(LS.get('f7_lvl')||1),goal:+(LS.get('f7_goal')||200),mode:LS.get('f7_mode')||'classic',av:0};
+let sMode=SU.mode;
+function openSetup(friends){SU.friends=friends;SU.av=myAv();$('sMeName').value=myName();
+ if(!SU.opp.length)SU.opp=shuffle(BOTS.slice()).map((n,i)=>({name:n,av:SU.av+3+i*5}));
+ if(!SU.fr.length)SU.fr=[{name:'',av:SU.av+4},{name:'',av:SU.av+9}];
+ $('sTitle').textContent=friends?'Entre amis':'Contre l\'ordi';$('sMeT').textContent=friends?'Joueur 1':'Toi';
+ $('sOppBox').hidden=friends;$('sFrBox').hidden=!friends;$('sLvlBox').hidden=friends;
+ $('tmC').innerHTML=[{t:'num',v:7},{t:'mod',v:'x2'},{t:'act',v:'freeze'}].map(c=>cardHTML(c)).join('');
+ $('tmV').innerHTML=[{t:'num',v:13,sp:'l13'},{t:'mod',v:-6},{t:'act',v:'steal'}].map(c=>cardHTML(c)).join('');
+ segSet('sMode',SU.mode);segSet('sLvl',SU.level);segSet('sGoal',SU.goal);renderSetup();go('setup')}
+function renderSetup(){$('sMeAv').innerHTML=avatar(SU.av);
+ $('sCount').textContent=SU.count;$('sMinus').disabled=SU.count<=1;$('sPlus').disabled=SU.count>=5;
+ $('sOpp').innerHTML=SU.opp.slice(0,SU.count).map(o=>`<div>${avatar(o.av)}${esc(o.name)}</div>`).join('');
+ $('sFr').innerHTML=SU.fr.map((f,i)=>`<div class="frow"><button class="avb" data-a="${i}" aria-label="Changer de personnage">${avatar(f.av)}</button><input class="inp2" data-i="${i}" value="${esc(f.name)}" maxlength="12" placeholder="Joueur ${i+2}" aria-label="Nom du joueur ${i+2}">${SU.fr.length>1?`<button class="x" data-x="${i}" aria-label="Retirer">×</button>`:''}</div>`).join('');
+ $('sAddF').hidden=SU.fr.length>=5}
+$('sMeAv').onclick=()=>{sfx('click');SU.av++;renderSetup()};
+$('sMinus').onclick=()=>{if(SU.count>1){sfx('click');SU.count--;renderSetup()}};
+$('sPlus').onclick=()=>{if(SU.count<5){sfx('click');SU.count++;renderSetup()}};
+$('sFr').addEventListener('input',e=>{const i=e.target.dataset.i;if(i!=null)SU.fr[+i].name=e.target.value});
+$('sFr').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;sfx('click');if(b.dataset.a!=null)SU.fr[+b.dataset.a].av++;if(b.dataset.x!=null)SU.fr.splice(+b.dataset.x,1);renderSetup()});
+$('sAddF').onclick=()=>{if(SU.fr.length<5){sfx('click');SU.fr.push({name:'',av:SU.av+SU.fr.length*5+4});renderSetup()}};
 function segSet(id,v){[...$(id).children].forEach(x=>x.classList.toggle('on',x.dataset.v==String(v)))}
 function segBind(id,cb){$(id).onclick=e=>{const b=e.target.closest('button');if(!b)return;sfx('click');segSet(id,b.dataset.v);cb(b.dataset.v)}}
-segBind('sLvl',v=>sLevel=+v);segBind('sGoal',v=>sGoal=+v);segBind('sMode',v=>{sMode=v;LS.set('f7_mode',v)});
-$('sGo').onclick=()=>{ac();sfx('click');setup.forEach((s,i)=>{s.name=s.name.trim()||(s.bot?BOTS[i]:'Joueur '+(i+1))});const h=setup.find(s=>!s.bot);if(h){LS.set('f7_name',h.name);LS.set('f7_av',String(h.av))}LS.del('f7_save');startLocal(setup,sGoal,sLevel,sMode)};
+segBind('sLvl',v=>{SU.level=+v;LS.set('f7_lvl',v)});segBind('sGoal',v=>{SU.goal=+v;LS.set('f7_goal',v)});segBind('sMode',v=>{SU.mode=sMode=v;LS.set('f7_mode',v)});
+$('sGo').onclick=()=>{ac();sfx('click');const me=$('sMeName').value.trim()||(SU.friends?'Joueur 1':'Toi');LS.set('f7_name',me);LS.set('f7_av',String(SU.av));
+ const P=[{name:me,bot:false,av:SU.av},...(SU.friends?SU.fr.map((f,i)=>({name:f.name.trim()||'Joueur '+(i+2),bot:false,av:f.av})):SU.opp.slice(0,SU.count).map(o=>({name:o.name,bot:true,av:o.av})))];
+ LS.del('f7_save');startLocal(P,SU.goal,SU.level,SU.mode)};
 $('sBack').onclick=()=>{sfx('click');goHome()};
 
 /* --- en ligne : accueil --- */
@@ -976,7 +1070,7 @@ $('hSolo').onclick=()=>{ac();sfx('click');openSetup(false)};$('hFriends').onclic
 $('hOnline').onclick=()=>{ac();sfx('click');openOnline()};$('hResume').onclick=()=>{ac();sfx('click');resume()};
 $('hSound').onclick=$('mSound').onclick=()=>{ac();setMuted(!muted);labels();sfx('click')};
 $('hMusic').onclick=$('mMusic').onclick=()=>{ac();setMusic(!musicOn);labels();sfx('click')};
-const openRules=m=>{sfx('click');rulesTab(m||(G&&G.mode)||sMode);$('ovRules').classList.add('on')};
+const openRules=m=>{sfx('click');rulesTab(m||(G&&G.mode)||SU.mode);$('ovRules').classList.add('on')};
 $('hRules').onclick=()=>openRules();$('mRules').onclick=()=>{$('ovMenu').classList.remove('on');openRules()};
 $('rClose').onclick=()=>{sfx('click');$('ovRules').classList.remove('on')};
 $('rTabs').onclick=e=>{const b=e.target.closest('button');if(b){sfx('click');rulesTab(b.dataset.v)}};

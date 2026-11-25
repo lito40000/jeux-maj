@@ -1,7 +1,7 @@
 {
- "web": 10,
- "apk": 110,
- "apkName": "4.10",
+ "web": 12,
+ "apk": 112,
+ "apkName": "4.12",
  "minApk": 0,
  "files": [
   "config.js",
@@ -9,7 +9,7 @@
   "webversion.txt"
  ],
  "apks": {
-  "fr.flip7.app": "https://lito40000.github.io/jeux-maj/flip7/apk/Flip7.apk?v=10"
+  "fr.flip7.app": "https://lito40000.github.io/jeux-maj/flip7/apk/Flip7.apk?v=12"
  },
- "notes": "Nouveautés : Version 5 : fond gai, musique zen, nouveaux sons, avatars, extension Vengeance, jeu en ligne"
+ "notes": "Nouveautés : Nouveau logo FLIP 7 aux couleurs vives + nouvelle icône d'appli"
 }

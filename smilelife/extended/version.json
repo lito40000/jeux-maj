@@ -1,0 +1,18 @@
+{
+ "web": 58,
+ "apk": 1058,
+ "apkName": "21.58",
+ "minApk": 0,
+ "files": [
+  "config.js",
+  "index.html",
+  "webversion.txt"
+ ],
+ "apks": {
+  "fr.bellevie.app": "https://lito40000.github.io/jeux-maj/smilelife/apk/SmileLife.apk?v=58",
+  "fr.bellevie.app.ext": "https://lito40000.github.io/jeux-maj/smilelife/apk/SmileLife-Extensions.apk?v=58",
+  "fr.bellevie.app.demo": "https://lito40000.github.io/jeux-maj/smilelife/apk/SmileLife-Demo.apk?v=58",
+  "fr.bellevie.app.ext.demo": "https://lito40000.github.io/jeux-maj/smilelife/apk/SmileLife-Extensions-Demo.apk?v=58"
+ },
+ "notes": "Nouveautés : Mise à jour à distance pour tous les joueurs (jeu + appli)"
+}

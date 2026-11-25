@@ -1,7 +1,7 @@
 {
- "web": 12,
- "apk": 112,
- "apkName": "4.12",
+ "web": 13,
+ "apk": 113,
+ "apkName": "4.13",
  "minApk": 0,
  "files": [
   "config.js",
@@ -9,7 +9,7 @@
   "webversion.txt"
  ],
  "apks": {
-  "fr.flip7.app": "https://lito40000.github.io/jeux-maj/flip7/apk/Flip7.apk?v=12"
+  "fr.flip7.app": "https://lito40000.github.io/jeux-maj/flip7/apk/Flip7.apk?v=13"
  },
- "notes": "Nouveautés : Nouveau logo FLIP 7 aux couleurs vives + nouvelle icône d'appli"
+ "notes": "Nouveautés : Icônes étoiles (niveau) et horloges (durée)"
 }

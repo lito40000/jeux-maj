@@ -1,0 +1,14 @@
+{
+ "web": 9,
+ "apk": 109,
+ "apkName": "4.9",
+ "minApk": 0,
+ "files": [
+  "index.html",
+  "webversion.txt"
+ ],
+ "apks": {
+  "fr.flip7.app": "https://lito40000.github.io/jeux-maj/flip7/apk/Flip7.apk?v=9"
+ },
+ "notes": "Nouveautés : Mise à jour à distance pour tous les joueurs (jeu + appli)"
+}
